@@ -8,6 +8,7 @@ import { ConverterComponent } from './converter/converter.component';
   declarations: [SearchComponent, LocationComponent, ConverterComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [SearchComponent, LocationComponent]
 })
-export class CommonModule { }
+export class UserInputModule { }

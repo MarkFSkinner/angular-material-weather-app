@@ -5,6 +5,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+//import { SearchComponent } from './user-input/search/search.component';
+
+import { UserInputModule } from './user-input/user-input.module';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +17,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserInputModule
+    //SearchComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
