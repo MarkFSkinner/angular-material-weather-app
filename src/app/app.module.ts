@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 
 import { UserInputModule } from './user-input/user-input.module';
 
+//import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -18,8 +19,9 @@ import { UserInputModule } from './user-input/user-input.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    UserInputModule
+    UserInputModule,
     //SearchComponent
+    //MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

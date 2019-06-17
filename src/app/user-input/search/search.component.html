@@ -1,3 +1,18 @@
-<p>
-  search works!
-</p>
+<form (ngSubmit)="onSubmit()" novalidate>
+<!--<div class="search-container">-->
+  <mat-form-field>
+    <input matInput #City placeholder="City" [formControl]="cityFormControl">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Country">
+      <mat-option value="Cannada">Canada</mat-option>
+      <mat-option value="USA">USA</mat-option>
+      <mat-option value="Mexico">Mexico</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-button color="primary">Go!</button>
+
+<!--</div>-->
+</form>

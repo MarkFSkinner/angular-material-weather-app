@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'weather-angular-material';
+
+  data:object = {};
+
+  updateData(data:object) {
+    /*this.data = {
+      location: location
+    }*/
+    this.data = data;
+    console.log(this.data);
+  }
 }

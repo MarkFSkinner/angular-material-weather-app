@@ -1,3 +1,3 @@
-<app-location></app-location>
+<app-location #location></app-location>
 <router-outlet></router-outlet>
-<app-search></app-search>
+<app-search (locationChange)="location.displayLocation($event.location); updateData($event)"></app-search>
